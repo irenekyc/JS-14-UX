@@ -28,6 +28,11 @@ const openModal = (modal)=>{
     modalName.style.opacity="1"
     modalName.style.width="375px"
     modalName.style.height="300px"
+    window.addEventListener('keydown', (e)=>{
+        if (e.keyCode == 27) {
+            return closeModal (modalName)
+        }
+    })
     modalName.addEventListener('click', (e)=>{
         if (e.target.id === "close-modal"){
             closeModal(modalName)
