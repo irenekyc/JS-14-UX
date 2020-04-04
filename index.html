@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>JS-13-Mode switch and search</title>
+    <title>JS-14-Some UX</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a1e74affc8.js" crossorigin="anonymous"></script>
@@ -57,14 +57,25 @@
 
         <div class="photo-gallery-container">
             
-      
-           
-          
-
    
     </div>
     </div>
-    <div class="welcomeModal"></div>
+    <div class="modal">
+    <div class="welcomeModal"> 
+        <div class="row align-right"> <span class="btn" id="close-modal">X</span></div>
+        <div class="row content"> <h1>Welcome to my little project page. </h1> <p>This is one of my html, css and javascript coding challenges. No JS library is used.</p></div>
+        <div class="row"><span class="btn continue-btn" id="close-modal">Continue </span></div>
+    </div>
+    <div class="subModal">
+        <div class="row align-right"> <span class="btn" id="close-modal">X</span></div>
+        <h1> Thanks for stopping by.</h1>
+        <p> If you enjoy my site, please consider subscribe</p>
+        <input type="email" id="subEmail">
+        <p><span class="btn subscribe-btn">Subscribe</span></p>
+        <p> Or</p>
+        <p> <span class="btn email-btn">Email me</span></p>
+    </div>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>

@@ -5,6 +5,43 @@ let photos = []
 const photoGallery = document.querySelector('.photo-gallery-container')
 let tagHTML = ""
 let outphotoHTML
+/////////////////////Modal ///////////////////////////
+let subscribeCount = false
+const welcomeMsg = ()=>{
+    if (!subscribeCount){
+        openModal('welcomeModal')
+}
+}
+
+//////////////// Retention //////////////////////
+
+window.addEventListener('mousemove', (e)=>{
+    if (e.y<5 && !subscribeCount){
+        openModal('subModal')
+        subscribeCount =true
+    }
+})
+
+const openModal = (modal)=>{
+    document.querySelector('.modal').style.display="block"
+    const modalName= document.querySelector(`.${modal}`)
+    modalName.style.opacity="1"
+    modalName.style.width="375px"
+    modalName.style.height="300px"
+    modalName.addEventListener('click', (e)=>{
+        if (e.target.id === "close-modal"){
+            closeModal(modalName)
+        }
+    })
+    
+}
+const closeModal = (modalName) =>{
+    document.querySelector('.modal').style.display="none"
+    modalName.style.opacity="0"
+    modalName.style.width="0"
+    modalName.style.height="0"
+}
+
 /////////////////Switch and Search //////////////
 const switchSearch = document.querySelector('.search-mode-container')
 const darkMode = document.getElementById('switch')
@@ -254,3 +291,4 @@ const displayImages = (photos)=>{
 
 
 displayImages(photos);
+setTimeout (welcomeMsg, 5000)
