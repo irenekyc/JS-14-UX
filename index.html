@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS-13-Mode switch and search</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a1e74affc8.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="web-container">
+        <div class="search-mode-container">
+            <div class="mode-switch flex-25">
+                <span> Dark Mode</span>
+                <input type="checkbox" name="switch" id="switch">
+                <label for="switch">Toggle</label>
+            </div>
+            <div class="search-container flex-25">
+                <div class="search-btn">
+                <input type="text" name="search" id="searchID" placeholder="search">
+                <i class="fas fa-search" id="searchBtn"></i>
+                </div>
+            </div>
+
+        </div>
+        <div class="header">
+            <h1> Photo Gallery - Travel</h1>
+        </div>
+        <div class="filter-container">
+            <div class="main-cat-div">
+                <span> Filter by</span>
+                <span class="main-cat" id="area-filter"> Area </span>
+                <span class="main-cat" id="travel-essential"> Travel Essential </span>
+                <span class="main-cat" id="nature-filter"> Nature </span>
+                <span class="main-cat" id="show-all"> Show All</span>
+            </div>
+            <div class="sub-cat-div area-filter" id="country-sub-cat">
+                <ul>
+                    <li class="sub-filter" id="asia"> Asia</li>
+                    <li class="sub-filter" id="europe"> Europe </li>
+                    <li class="sub-filter" id="americas"> Americas </li>
+                    <li class="sub-filter" id="australia"> Australia </li>
+                </ul>
+            </div>
+            <div class="sub-cat-div nature-filter">
+                <ul>
+                    <li class="sub-filter" id="beach"> Beach </li>
+                    <li class="sub-filter" id="mountain"> Mountain </li>
+                    <li class="sub-filter" id="city"> City</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="photo-gallery-container">
+            
+      
+           
+          
+
+   
+    </div>
+    </div>
+    <div class="welcomeModal"></div>
+    <script src="app.js"></script>
+</body>
+</html>
